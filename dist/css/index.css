@@ -1,14 +1,833 @@
-body {
-  width: 100%;
-  height: 100%; }
-
-h1 {
-  width: 200px;
-  color: red;
-  font-size: 34px;
-  background-color: lightskyblue; }
-
-div {
-  width: 400px;
-  height: 200px;
-  background-color: #ccc; }
+.app {
+  color: #333;
+  font-size: 14px; }
+  .app .header {
+    background-color: #333333; }
+    .app .header .header-inner {
+      width: 1090px;
+      margin: 0 auto;
+      height: 36px; }
+      .app .header .header-inner .notice {
+        padding-left: 18px;
+        line-height: 36px;
+        background: url(../img/icon.png) no-repeat 0px 3px;
+        text-decoration: solid;
+        color: #cc9756; }
+        .app .header .header-inner .notice:hover {
+          color: #fff; }
+      .app .header .header-inner ul {
+        float: right;
+        list-style: none; }
+        .app .header .header-inner ul li {
+          float: left;
+          padding: 0 10px;
+          height: 36px;
+          line-height: 36px; }
+          .app .header .header-inner ul li a {
+            color: #ccc; }
+            .app .header .header-inner ul li a:hover {
+              color: #fff; }
+          .app .header .header-inner ul li img {
+            width: 10px;
+            vertical-align: middle;
+            margin-left: 5px; }
+          .app .header .header-inner ul li:last-child {
+            height: 30px;
+            padding-left: 18px;
+            background: url(../img/icon.png) no-repeat 0px 12px;
+            overflow: hidden; }
+  .app .wyyx {
+    background-color: #fff; }
+    .app .wyyx .wyyx-inner {
+      width: 1090px;
+      margin: 26px auto 0; }
+      .app .wyyx .wyyx-inner .logo {
+        height: 60px; }
+        .app .wyyx .wyyx-inner .logo .logo-a {
+          display: block;
+          float: left;
+          width: 212px;
+          margin-right: 164px; }
+          .app .wyyx .wyyx-inner .logo .logo-a h1 {
+            height: 60px;
+            background: url(../img/icon.png) 0px 540px;
+            text-indent: -9999px;
+            overflow: hidden; }
+        .app .wyyx .wyyx-inner .logo .search {
+          float: left;
+          width: 532px;
+          height: 38px;
+          box-sizing: border-box;
+          border: 1px solid #CB9755;
+          border-radius: 20px;
+          overflow: hidden;
+          position: relative; }
+          .app .wyyx .wyyx-inner .logo .search input {
+            float: left;
+            width: 440px;
+            height: 38px;
+            border: none;
+            padding-left: 40px;
+            font-size: 14px;
+            box-sizing: border-box; }
+          .app .wyyx .wyyx-inner .logo .search i {
+            display: block;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 10px;
+            left: 10px;
+            background: url(../img/icon_search.png) no-repeat 6px 0; }
+          .app .wyyx .wyyx-inner .logo .search button {
+            float: right;
+            width: 90px;
+            height: 36px;
+            color: #fff;
+            font-size: 16px;
+            background-color: #CB9755; }
+        .app .wyyx .wyyx-inner .logo .car-btn {
+          float: right;
+          position: relative;
+          width: 134px;
+          height: 38px;
+          border: 1px solid #CD9959;
+          box-sizing: border-box;
+          border-radius: 20px;
+          font-size: 16px;
+          color: #CD9959; }
+          .app .wyyx .wyyx-inner .logo .car-btn b {
+            position: absolute;
+            left: 13px;
+            top: 4px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            background: url(../img/icon_car.png); }
+          .app .wyyx .wyyx-inner .logo .car-btn i {
+            position: absolute;
+            right: 13px;
+            top: 4px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-top: 3px;
+            line-height: 20px;
+            color: #fff;
+            background-color: #f00;
+            border-radius: 50%;
+            font-style: normal; }
+      .app .wyyx .wyyx-inner .nav {
+        margin-top: 38px;
+        display: flex;
+        justify-content: space-between; }
+        .app .wyyx .wyyx-inner .nav a {
+          display: block;
+          color: #000;
+          font-size: 14px;
+          padding-bottom: 7px;
+          border-bottom: 3px solid #fff; }
+          .app .wyyx .wyyx-inner .nav a:hover {
+            color: #CB9755;
+            border-color: #CB9755; }
+        .app .wyyx .wyyx-inner .nav .active {
+          color: #CB9755;
+          border-color: #CB9755; }
+  .app .banner {
+    background-color: #F5F5F5; }
+    .app .banner .banner-inner {
+      width: 100%;
+      height: 420px;
+      overflow: hidden; }
+    .app .banner a {
+      display: block;
+      height: 100%;
+      background: url(../img/banner-index.webp) no-repeat center top; }
+  .app .new {
+    position: relative;
+    background-color: #fff;
+    padding: 30px 0 110px; }
+    .app .new .new-inner {
+      width: 1090px;
+      margin: 0 auto; }
+      .app .new .new-inner .new-header {
+        background-color: #fff;
+        color: #333;
+        padding-bottom: 20px; }
+        .app .new .new-inner .new-header h3 {
+          float: left;
+          font-size: 28px;
+          font-weight: normal;
+          line-height: 28px;
+          margin-right: 20px; }
+        .app .new .new-inner .new-header i {
+          float: left;
+          padding-top: 14px;
+          font-style: normal;
+          display: inline-block;
+          font-size: 14px; }
+        .app .new .new-inner .new-header a {
+          float: right;
+          color: #333;
+          font-size: 14px;
+          padding-top: 14px; }
+      .app .new .new-inner .new-swiper {
+        width: 1090px;
+        margin: 0 auto; }
+        .app .new .new-inner .new-swiper .swiper-container {
+          width: 1090px;
+          height: 350px; }
+          .app .new .new-inner .new-swiper .swiper-container .swiper-slide {
+            display: flex;
+            justify-content: space-between; }
+            .app .new .new-inner .new-swiper .swiper-container .swiper-slide div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              text-align: center;
+              border: none; }
+              .app .new .new-inner .new-swiper .swiper-container .swiper-slide div .img {
+                background-color: #F4F4F4;
+                width: 265px;
+                height: 265px; }
+              .app .new .new-inner .new-swiper .swiper-container .swiper-slide div span {
+                display: block;
+                height: 30px;
+                line-height: 30px; }
+              .app .new .new-inner .new-swiper .swiper-container .swiper-slide div .p {
+                width: 166px;
+                height: 40px;
+                line-height: 20px;
+                color: #333; }
+                .app .new .new-inner .new-swiper .swiper-container .swiper-slide div .p:hover {
+                  color: #b4a078; }
+              .app .new .new-inner .new-swiper .swiper-container .swiper-slide div i {
+                margin-top: 6px;
+                color: #d4282d;
+                font-style: normal; }
+        .app .new .new-inner .new-swiper #my-swiper-btn {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #E2C19A;
+          background-size: 12px 24px; }
+    .app .new .aside-left {
+      position: absolute;
+      top: 26px;
+      left: 40px;
+      background-color: #fff;
+      z-index: 99; }
+      .app .new .aside-left ul {
+        width: 108px;
+        border: 1px solid #E3DFD6;
+        text-align: center; }
+        .app .new .aside-left ul li {
+          list-style: none; }
+          .app .new .aside-left ul li a {
+            display: block;
+            color: inherit;
+            padding: 3px 5px;
+            line-height: 24px;
+            border-bottom: 1px solid #E3DFD6; }
+          .app .new .aside-left ul li:first-child {
+            color: #bb3343;
+            font-size: 16px;
+            line-height: 35px;
+            background: url(../img/aside-bg-index.webp) no-repeat bottom; }
+        .app .new .aside-left ul .current {
+          color: #f40; }
+  .app .moods {
+    background-color: #F4F0EA;
+    padding: 60px 0; }
+    .app .moods .moods-inner {
+      width: 1090px;
+      background-color: #F4F0EA;
+      margin: 0 auto; }
+      .app .moods .moods-inner .moods-header {
+        background-color: #F4F0EA;
+        color: #333;
+        padding-bottom: 20px; }
+        .app .moods .moods-inner .moods-header h3 {
+          float: left;
+          font-size: 28px;
+          font-weight: normal;
+          line-height: 28px;
+          margin-right: 35px; }
+        .app .moods .moods-inner .moods-header i {
+          float: left;
+          margin-right: 55px;
+          font-style: normal;
+          display: inline-block;
+          width: 70px;
+          line-height: 28px;
+          text-align: center;
+          font-size: 14px;
+          cursor: pointer; }
+          .app .moods .moods-inner .moods-header i:hover {
+            color: #b4a078; }
+        .app .moods .moods-inner .moods-header b {
+          float: left;
+          font-weight: normal;
+          font-style: normal;
+          display: inline-block;
+          width: 70px;
+          line-height: 28px;
+          text-align: center;
+          font-size: 14px;
+          cursor: pointer; }
+          .app .moods .moods-inner .moods-header b:hover {
+            color: #b4a078; }
+        .app .moods .moods-inner .moods-header a {
+          float: right;
+          color: #333;
+          font-size: 14px;
+          padding-top: 14px; }
+        .app .moods .moods-inner .moods-header .active {
+          color: #b4a078;
+          border-bottom: 2px solid #b4a078; }
+      .app .moods .moods-inner .moods-list {
+        height: 570px;
+        background-color: #F4F0EA; }
+        .app .moods .moods-inner .moods-list .left {
+          float: left;
+          background-color: #fff;
+          height: 100%; }
+          .app .moods .moods-inner .moods-list .left .big-img {
+            padding: 40px 35px;
+            width: 320px;
+            height: 320px;
+            border-bottom: 1px solid #F4F0EA; }
+          .app .moods .moods-inner .moods-list .left .big-msg {
+            width: 390px;
+            height: 160px;
+            box-sizing: border-box;
+            padding: 18px 0 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between; }
+            .app .moods .moods-inner .moods-list .left .big-msg span {
+              padding: 0 5px;
+              line-height: 20px;
+              font-size: 12px;
+              color: #fff;
+              background-color: #e36844; }
+            .app .moods .moods-inner .moods-list .left .big-msg p {
+              width: 250px;
+              text-align: center; }
+              .app .moods .moods-inner .moods-list .left .big-msg p a {
+                font-size: 18px;
+                color: #333; }
+            .app .moods .moods-inner .moods-list .left .big-msg div {
+              font-size: 18px; }
+              .app .moods .moods-inner .moods-list .left .big-msg div strong {
+                font-size: 18px;
+                color: #d4282d; }
+              .app .moods .moods-inner .moods-list .left .big-msg div i {
+                font-style: normal;
+                color: #999;
+                font-size: 14px;
+                text-decoration: line-through; }
+        .app .moods .moods-inner .moods-list .right {
+          float: right;
+          width: 690px;
+          height: 570px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap; }
+          .app .moods .moods-inner .moods-list .right .box {
+            background-color: #fff;
+            margin-bottom: 9px;
+            height: 280px; }
+            .app .moods .moods-inner .moods-list .right .box img {
+              width: 180px;
+              height: 180px;
+              padding: 0 22px;
+              border-bottom: 1px solid #F4F0EA; }
+            .app .moods .moods-inner .moods-list .right .box .msg {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              height: 98px;
+              padding: 10px 0;
+              box-sizing: border-box; }
+              .app .moods .moods-inner .moods-list .right .box .msg span {
+                height: 20px;
+                line-height: 20px; }
+              .app .moods .moods-inner .moods-list .right .box .msg p {
+                width: 130px;
+                text-align: center;
+                line-height: 20px; }
+              .app .moods .moods-inner .moods-list .right .box .msg i {
+                margin-top: 6px;
+                font-style: normal;
+                color: #d4282d; }
+  .app .time {
+    background-color: #fff; }
+    .app .time .time-inner {
+      width: 1090px;
+      margin: 0 auto;
+      padding: 60px 0; }
+      .app .time .time-inner .header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        background-color: #fff; }
+        .app .time .time-inner .header h3 {
+          font-size: 28px;
+          font-weight: normal;
+          line-height: 28px; }
+        .app .time .time-inner .header a {
+          padding-top: 14px; }
+          .app .time .time-inner .header a:hover {
+            color: #CD9959; }
+      .app .time .time-inner .main {
+        height: 430px; }
+        .app .time .time-inner .main .cul-time {
+          float: left;
+          text-align: center;
+          width: 224px;
+          height: 430px;
+          background-color: #F8E3D5; }
+          .app .time .time-inner .main .cul-time p {
+            margin-top: 66px;
+            font-size: 26px;
+            color: #615548; }
+          .app .time .time-inner .main .cul-time b {
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 2px;
+            background-color: #615548;
+            margin: 16px 0 20px; }
+          .app .time .time-inner .main .cul-time em {
+            display: inline-block;
+            font-style: normal;
+            color: #615548;
+            font-size: 18px;
+            margin-bottom: 20px; }
+          .app .time .time-inner .main .cul-time div span {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #615548;
+            line-height: 40px;
+            text-align: center;
+            color: #fff; }
+          .app .time .time-inner .main .cul-time button {
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 110px;
+            height: 30px;
+            background-color: #A7936F;
+            color: #fff; }
+        .app .time .time-inner .main .list {
+          display: flex;
+          flex-wrap: wrap;
+          border-top: 1px solid #F0ECE4; }
+          .app .time .time-inner .main .list .item {
+            width: 432px;
+            height: 212px;
+            border-right: 1px solid #F0ECE4;
+            border-bottom: 1px solid #F0ECE4; }
+            .app .time .time-inner .main .list .item .left {
+              float: left;
+              width: 180px;
+              padding: 30px;
+              box-sizing: border-box; }
+            .app .time .time-inner .main .list .item .right {
+              float: left; }
+              .app .time .time-inner .main .list .item .right .item-list {
+                width: 250px;
+                padding: 15px 10px 15px 5px;
+                box-sizing: border-box; }
+                .app .time .time-inner .main .list .item .right .item-list p {
+                  line-height: 26px; }
+                .app .time .time-inner .main .list .item .right .item-list b {
+                  font-weight: normal;
+                  color: #999;
+                  font-size: 12px;
+                  line-height: 26px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis; }
+                .app .time .time-inner .main .list .item .right .item-list div {
+                  margin: 15px 0;
+                  height: 10px; }
+                  .app .time .time-inner .main .list .item .right .item-list div span {
+                    display: inline-block;
+                    font-size: 0;
+                    width: 150px;
+                    height: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #F2CECD;
+                    box-sizing: border-box; }
+                    .app .time .time-inner .main .list .item .right .item-list div span i {
+                      display: inline-block;
+                      border-top-left-radius: 50%;
+                      border-bottom-left-radius: 50%;
+                      width: 120px;
+                      height: 10px;
+                      background-color: #FBE5E5; }
+                  .app .time .time-inner .main .list .item .right .item-list div b {
+                    font-style: normal;
+                    color: #999; }
+                .app .time .time-inner .main .list .item .right .item-list em {
+                  font-style: normal;
+                  color: #BE4141; }
+                .app .time .time-inner .main .list .item .right .item-list i {
+                  display: inline-block;
+                  font-size: 18px;
+                  color: #BE4141;
+                  margin-right: 16px; }
+                .app .time .time-inner .main .list .item .right .item-list span {
+                  color: #999;
+                  text-decoration: line-through; }
+                .app .time .time-inner .main .list .item .right .item-list button {
+                  margin-top: 20px;
+                  width: 118px;
+                  height: 30px;
+                  color: #fff;
+                  font-size: 14px;
+                  background-color: #BE4141; }
+  .app .home {
+    background-color: #fff; }
+    .app .home .home-inner {
+      padding-top: 60px;
+      width: 1090px;
+      margin: 0 auto; }
+      .app .home .home-inner .header {
+        background-color: #fff;
+        padding-bottom: 20px; }
+        .app .home .home-inner .header h3 {
+          font-size: 28px;
+          font-weight: normal;
+          line-height: 28px;
+          float: left; }
+        .app .home .home-inner .header a {
+          float: right;
+          padding-top: 14px; }
+          .app .home .home-inner .header a:hover {
+            color: #CD9959; }
+        .app .home .home-inner .header ul {
+          padding-top: 14px;
+          color: #333;
+          float: right;
+          margin-right: 30px; }
+          .app .home .home-inner .header ul a {
+            float: left;
+            display: block;
+            padding: 0 10px;
+            color: #333; }
+          .app .home .home-inner .header ul span {
+            float: left; }
+    .app .home #swiper2-prev {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #E2C19A;
+      background-size: 12px 24px; }
+      .app .home #swiper2-prev:hover {
+        background-color: #CB9755; }
+    .app .home #swiper2-next {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #E2C19A;
+      background-size: 12px 24px; }
+      .app .home #swiper2-next:hover {
+        background-color: #CB9755; }
+    .app .home .home-list {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      height: 360px; }
+      .app .home .home-list div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 360px;
+        border: none; }
+        .app .home .home-list div .img {
+          background-color: #F4F4F4;
+          width: 265px;
+          height: 265px; }
+        .app .home .home-list div span {
+          display: block;
+          margin-top: 10px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          color: #fff;
+          background-color: #f40;
+          padding: 0 5px; }
+        .app .home .home-list div .p {
+          width: 166px;
+          height: 40px;
+          margin: 5px 0;
+          line-height: 20px;
+          font-size: 12px;
+          color: #333; }
+          .app .home .home-list div .p:hover {
+            color: #b4a078; }
+        .app .home .home-list div i {
+          margin-top: 6px;
+          color: #d4282d;
+          font-style: normal; }
+        .app .home .home-list div strong {
+          font-weight: normal;
+          text-decoration: line-through;
+          color: #999; }
+  .app .common-inner {
+    padding-top: 60px;
+    width: 1090px;
+    margin: 0 auto; }
+    .app .common-inner .header {
+      background-color: #fff;
+      padding-bottom: 20px; }
+      .app .common-inner .header h3 {
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 28px;
+        float: left; }
+      .app .common-inner .header a {
+        float: right;
+        padding-top: 14px; }
+        .app .common-inner .header a:hover {
+          color: #CD9959; }
+      .app .common-inner .header ul {
+        padding-top: 14px;
+        color: #333;
+        float: right;
+        margin-right: 30px; }
+        .app .common-inner .header ul a {
+          float: left;
+          display: block;
+          padding: 0 10px;
+          color: #333; }
+        .app .common-inner .header ul span {
+          float: left; }
+  .app .common-list {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 360px; }
+    .app .common-list div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      height: 360px;
+      border: none; }
+      .app .common-list div .img {
+        background-color: #F4F4F4;
+        width: 265px;
+        height: 265px; }
+      .app .common-list div span {
+        display: block;
+        margin-top: 10px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: #fff;
+        background-color: #f40;
+        padding: 0 5px; }
+      .app .common-list div .p {
+        width: 166px;
+        height: 40px;
+        margin: 5px 0;
+        line-height: 20px;
+        font-size: 12px;
+        color: #333; }
+        .app .common-list div .p:hover {
+          color: #b4a078; }
+      .app .common-list div i {
+        margin-top: 6px;
+        color: #d4282d;
+        font-style: normal; }
+      .app .common-list div strong {
+        font-weight: normal;
+        text-decoration: line-through;
+        color: #999; }
+  .app .clothing .clothing-inner {
+    padding-top: 60px;
+    width: 1090px;
+    margin: 0 auto; }
+    .app .clothing .clothing-inner .header {
+      background-color: #fff;
+      padding-bottom: 20px; }
+      .app .clothing .clothing-inner .header h3 {
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 28px;
+        float: left; }
+      .app .clothing .clothing-inner .header a {
+        float: right;
+        padding-top: 14px; }
+        .app .clothing .clothing-inner .header a:hover {
+          color: #CD9959; }
+      .app .clothing .clothing-inner .header ul {
+        padding-top: 14px;
+        color: #333;
+        float: right;
+        margin-right: 30px; }
+        .app .clothing .clothing-inner .header ul a {
+          float: left;
+          display: block;
+          padding: 0 10px;
+          color: #333; }
+        .app .clothing .clothing-inner .header ul span {
+          float: left; }
+  .app .food .food-inner {
+    padding-top: 60px;
+    width: 1090px;
+    margin: 0 auto; }
+    .app .food .food-inner .header {
+      background-color: #fff;
+      padding-bottom: 20px; }
+      .app .food .food-inner .header h3 {
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 28px;
+        float: left; }
+      .app .food .food-inner .header a {
+        float: right;
+        padding-top: 14px; }
+        .app .food .food-inner .header a:hover {
+          color: #CD9959; }
+      .app .food .food-inner .header ul {
+        padding-top: 14px;
+        color: #333;
+        float: right;
+        margin-right: 30px; }
+        .app .food .food-inner .header ul a {
+          float: left;
+          display: block;
+          padding: 0 10px;
+          color: #333; }
+        .app .food .food-inner .header ul span {
+          float: left; }
+  .app .yx {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    background-color: #fff; }
+    .app .yx .yx-inner {
+      width: 1090px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center; }
+      .app .yx .yx-inner .yx1 {
+        width: 362px;
+        border-right: 1px solid #E9E9E9; }
+        .app .yx .yx-inner .yx1 a {
+          display: inline-block;
+          width: 80px;
+          height: 100px;
+          border: 1px solid #ccc;
+          margin: 0 20px; }
+          .app .yx .yx-inner .yx1 a i {
+            display: block;
+            margin: 25px 5px 15px;
+            font-size: 30px; }
+      .app .yx .yx-inner .yx2 {
+        width: 362px;
+        padding: 0 40px;
+        box-sizing: border-box;
+        border-right: 1px solid #E9E9E9;
+        text-align: start; }
+        .app .yx .yx-inner .yx2 p {
+          font-size: 12px;
+          line-height: 22px;
+          margin-bottom: 28px; }
+        .app .yx .yx-inner .yx2 span {
+          font-size: 32px;
+          color: #008c8c; }
+        .app .yx .yx-inner .yx2 b {
+          font-size: 32px;
+          color: #51B140; }
+        .app .yx .yx-inner .yx2 i {
+          font-size: 32px;
+          color: #ED393F; }
+      .app .yx .yx-inner .yx3 {
+        width: 362px; }
+        .app .yx .yx-inner .yx3 span {
+          display: block;
+          color: #b4a078;
+          font-size: 12px;
+          margin-top: 10px; }
+    .app .yx h4 {
+      color: #333;
+      font-weight: normal;
+      font-size: 16px;
+      height: 16px;
+      line-height: 16px;
+      margin-bottom: 28px; }
+  .app .footer {
+    background-color: #414141; }
+    .app .footer .footer-inner {
+      width: 1090px;
+      margin: 0 auto; }
+      .app .footer .footer-inner .logo {
+        padding: 40px 20px;
+        border-bottom: 1px solid #4F4F4F;
+        display: flex;
+        justify-content: space-between; }
+        .app .footer .footer-inner .logo div i {
+          display: inline-block;
+          vertical-align: middle;
+          width: 50px;
+          height: 50px;
+          margin-right: 17px;
+          background: url(../img/footicon.png) no-repeat 0 0; }
+        .app .footer .footer-inner .logo div span {
+          color: #fff;
+          font-size: 18px; }
+        .app .footer .footer-inner .logo div .i1 {
+          background-position: 0 -134px; }
+        .app .footer .footer-inner .logo div .i2 {
+          background-position: 0 -368px; }
+        .app .footer .footer-inner .logo div .i3 {
+          background-position: 0 0; }
+        .app .footer .footer-inner .logo div .i4 {
+          background-position: 0 -194px; }
+      .app .footer .footer-inner .copy {
+        padding: 25px 0 15px;
+        color: #999;
+        font-size: 12px; }
+        .app .footer .footer-inner .copy .p1 {
+          text-align: center; }
+          .app .footer .footer-inner .copy .p1 a {
+            font-size: 12px;
+            color: #999;
+            padding: 0 10px;
+            line-height: 18px; }
+            .app .footer .footer-inner .copy .p1 a:hover {
+              color: #fff; }
+        .app .footer .footer-inner .copy .p2 {
+          text-align: center;
+          margin: 10px 0; }
+          .app .footer .footer-inner .copy .p2 a {
+            font-size: 12px;
+            color: #999;
+            line-height: 18px; }
+            .app .footer .footer-inner .copy .p2 a:hover {
+              color: #fff; }
+        .app .footer .footer-inner .copy .p3 {
+          text-align: center;
+          margin: 10px 0; }
+          .app .footer .footer-inner .copy .p3 a {
+            font-size: 12px;
+            color: #999;
+            line-height: 18px; }
+            .app .footer .footer-inner .copy .p3 a:hover {
+              color: #fff; }
+        .app .footer .footer-inner .copy .p4 {
+          text-align: center; }
+          .app .footer .footer-inner .copy .p4 a {
+            font-size: 12px;
+            color: #999;
+            line-height: 18px; }
+            .app .footer .footer-inner .copy .p4 a:hover {
+              color: #fff; }
