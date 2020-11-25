@@ -38,16 +38,23 @@ input::placeholder {
   .app .main {
     width: 500px;
     margin: 80px auto; }
-    .app .main input {
-      width: 480px;
-      height: 50px;
-      font-size: 18px;
-      border: 1px solid #aaa;
-      border-radius: 5px;
-      padding-left: 15px;
-      margin-bottom: 50px; }
-      .app .main input:focus {
-        border-color: #549df8; }
+    .app .main form label {
+      display: block;
+      color: #f40;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-top: 6px; }
+    .app .main form div {
+      height: 100px; }
+      .app .main form div input {
+        width: 480px;
+        height: 50px;
+        font-size: 18px;
+        border: 1px solid #aaa;
+        border-radius: 5px;
+        padding-left: 15px; }
+        .app .main form div input:focus {
+          border-color: #549df8; }
     .app .main button {
       width: 500px;
       height: 60px;

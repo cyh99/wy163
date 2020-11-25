@@ -25,7 +25,6 @@ var mySwiper2 = new Swiper ('.swiper2', {
 var aside = document.querySelector('.aside-left')
 var li = document.querySelectorAll('.aside-left li')
 window.onscroll = function () { 
-    console.log(window.scrollY)
     // 控制导航栏的定位
     if(window.scrollY > 605) {
         aside.style.position = 'fixed'
@@ -76,5 +75,75 @@ window.onscroll = function () {
         li[9].className = ''
         li[10].className = 'current'
     }
-    
  }
+
+//  数据渲染
+// 居家生活版块
+var homeList = document.querySelector('.home-list')
+$.ajax({
+    url:'../json/index.json',
+    type: 'get',
+    dataType : 'json',
+    success : function (data){
+        console.log(data)
+        var str = ''
+        // console.log(data['new'])
+        data['new'].forEach(function(value,index){
+            console.log(value)
+            str += 
+            `
+            <div>
+                        <a href="#" class="img">
+                            <img src="${value.url}">
+                        </a>
+                        <span>${value.tag}</span>
+                        <a href="#" class="p">
+                            <p>${value.msg}</p>
+                        </a>
+                        <em>
+                            <i>${value.price}</i> <strong>${value.oldPrice}</strong>
+                        </em>
+                    </div>
+            `
+        })
+        homeList.innerHTML = str
+    },
+    error : function (status) {
+        console.log(status)
+    }
+})
+
+// 服饰鞋包版块
+var clothingList = document.querySelector('.clothing .common-list')
+$.ajax({
+    url:'../json/index.json',
+    type: 'get',
+    dataType : 'json',
+    success : function (data){
+        console.log(data)
+        var str = ''
+        // console.log(data['new'])
+        data['clothing'].forEach(function(value,index){
+            console.log(value)
+            str += 
+            `
+            <div>
+                        <a href="#" class="img">
+                            <img src="${value.url}">
+                        </a>
+                        <span>${value.tag}</span>
+                        <a href="#" class="p">
+                            <p>${value.msg}</p>
+                        </a>
+                        <em>
+                            <i>${value.price}</i> <strong>${value.oldPrice}</strong>
+                        </em>
+                    </div>
+            `
+        })
+        clothingList.innerHTML = str
+    },
+    error : function (status) {
+        console.log(status)
+    }
+})

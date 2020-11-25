@@ -37,7 +37,9 @@
             background: url(../img/icon.png) no-repeat 0px 12px;
             overflow: hidden; }
   .app .wyyx {
-    background-color: #fff; }
+    background-color: #fff;
+    margin-bottom: 2px;
+    box-shadow: 0px 1px 1px 0px #ccc; }
     .app .wyyx .wyyx-inner {
       width: 1090px;
       margin: 26px auto 0; }
@@ -122,6 +124,7 @@
         justify-content: space-between; }
         .app .wyyx .wyyx-inner .nav a {
           display: block;
+          position: relative;
           color: #000;
           font-size: 14px;
           padding-bottom: 7px;
@@ -560,8 +563,7 @@
           line-height: 20px;
           font-size: 12px;
           color: #fff;
-          background-color: #f40;
-          padding: 0 5px; }
+          background-color: #f40; }
         .app .home .home-list div .p {
           width: 166px;
           height: 40px;

@@ -1,0 +1,122 @@
+{
+    "new":[
+        {
+            "id":10001,
+            "url":"./img/data-new-img1-index.webp",
+            "tag":"新品限时购",
+            "msg":"2020新果上市，南非碧根果仁  150g",
+            "price":"￥39.9",
+            "oldPrice":"￥46"
+        },
+        {
+            "id":10002,
+            "url":"./img/data-new-img2-index.webp",
+            "tag":"",
+            "msg":"12.12省钱卡 花6元得48元",
+            "price":"￥6",
+            "oldPrice":""
+        },
+        {
+            "id":10003,
+            "url":"./img/data-new-img3-index.webp",
+            "tag":"",
+            "msg":"三年陈普洱，新装玲珑柑普茶 130克（10颗）",
+            "price":"￥69",
+            "oldPrice":""
+        },
+        {
+            "id":10004,
+            "url":"./img/data-new-img4-index.webp",
+            "tag":"",
+            "msg":"奶香浓郁四层夹心 俄罗斯冰淇淋威化饼干",
+            "price":"￥69",
+            "oldPrice":""
+        }
+    ],
+    "moods":[
+        {
+            "id":20001,
+            "url":"./img/data-moods-img1-index.webp",
+            "msg":"飞天53度贵州茅台酒 500毫升",
+            "price":"￥1499"
+        },
+        {
+            "id":20002,
+            "url":"./img/data-moods-img2-index.webp",
+            "msg":"飞天53度贵州茅台酒 500毫升",
+            "price":"￥1499"
+        },
+        {
+            "id":20003,
+            "url":"./img/data-moods-img3-index.webp",
+            "msg":"【27日开抢】新西兰3.6g乳蛋白纯牛奶24盒",
+            "price":"￥99"
+        },
+        {
+            "id":20004,
+            "url":"./img/data-moods-img4-index.webp",
+            "msg":"一次性医用口罩50片, 秋冬囤货备用",
+            "price":"￥20"
+        },
+        {
+            "id":20005,
+            "url":"./img/data-moods-img5-index.webp",
+            "msg":"男式咖啡碳保暖内衣2.0",
+            "price":"￥89.9"
+        },
+        {
+            "id":20006,
+            "url":"./img/data-moods-img6-index.webp",
+            "msg":"肉香满满，火腿猪肉罐头 198克",
+            "price":"￥19.9"
+        },
+        {
+            "id":20007,
+            "url":"./img/data-moods-img2-index.webp",
+            "msg":"无添加蔗糖，苏打饼干 360克",
+            "price":"￥9.9"
+        }
+    ],
+    "clothing":[
+        {
+            "id":30001,
+            "tag":"限时购",
+            "url":"./img/data-clothing1-index.webp",
+            "msg":"可甜可帅气，女式基础弹力紧身打底裤",
+            "price":"￥74.9",
+            "oldPrice":"￥139"
+        },
+        {
+            "id":30002,
+            "tag":"限时购",
+            "url":"./img/data-clothing2-index.webp",
+            "msg":"24寸纯PC铝框拉杆箱",
+            "price":"￥321",
+            "oldPrice":"￥429"
+        },
+        {
+            "id":30003,
+            "tag":"限时购",
+            "url":"./img/data-clothing3-index.webp",
+            "msg":"32功能区格，男式商务出行机能双肩包",
+            "price":"¥369",
+            "oldPrice":""
+
+        },
+        {
+            "id":30004,
+            "tag":"12.12预售",
+            "url":"./img/data-clothing4-index.webp",
+            "msg":"生活泼水防护，女式英伦轻雅双肩包升级款",
+            "price":"￥115",
+            "oldPrice":"￥199"
+        }
+    ]
+}
+
+
+
+
+
+
+

@@ -22,8 +22,7 @@ var aside = document.querySelector('.aside-left');
 var li = document.querySelectorAll('.aside-left li');
 
 window.onscroll = function () {
-  console.log(window.scrollY); // 控制导航栏的定位
-
+  // 控制导航栏的定位
   if (window.scrollY > 605) {
     aside.style.position = 'fixed';
   } else {
@@ -73,4 +72,46 @@ window.onscroll = function () {
     li[9].className = '';
     li[10].className = 'current';
   }
-};
+}; //  数据渲染
+// 居家生活版块
+
+
+var homeList = document.querySelector('.home-list');
+$.ajax({
+  url: '../json/index.json',
+  type: 'get',
+  dataType: 'json',
+  success: function success(data) {
+    console.log(data);
+    var str = ''; // console.log(data['new'])
+
+    data['new'].forEach(function (value, index) {
+      console.log(value);
+      str += "\n            <div>\n                        <a href=\"#\" class=\"img\">\n                            <img src=\"".concat(value.url, "\">\n                        </a>\n                        <span>").concat(value.tag, "</span>\n                        <a href=\"#\" class=\"p\">\n                            <p>").concat(value.msg, "</p>\n                        </a>\n                        <em>\n                            <i>").concat(value.price, "</i> <strong>").concat(value.oldPrice, "</strong>\n                        </em>\n                    </div>\n            ");
+    });
+    homeList.innerHTML = str;
+  },
+  error: function error(status) {
+    console.log(status);
+  }
+}); // 服饰鞋包版块
+
+var clothingList = document.querySelector('.clothing .common-list');
+$.ajax({
+  url: '../json/index.json',
+  type: 'get',
+  dataType: 'json',
+  success: function success(data) {
+    console.log(data);
+    var str = ''; // console.log(data['new'])
+
+    data['clothing'].forEach(function (value, index) {
+      console.log(value);
+      str += "\n            <div>\n                        <a href=\"#\" class=\"img\">\n                            <img src=\"".concat(value.url, "\">\n                        </a>\n                        <span>").concat(value.tag, "</span>\n                        <a href=\"#\" class=\"p\">\n                            <p>").concat(value.msg, "</p>\n                        </a>\n                        <em>\n                            <i>").concat(value.price, "</i> <strong>").concat(value.oldPrice, "</strong>\n                        </em>\n                    </div>\n            ");
+    });
+    clothingList.innerHTML = str;
+  },
+  error: function error(status) {
+    console.log(status);
+  }
+});

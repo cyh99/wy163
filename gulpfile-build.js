@@ -51,11 +51,20 @@ async function html(){
   })
 }
 
+// 处理json
+async function json(){
+  src('./json/*.json')
+  .pipe(dest('./dist/json'))
+}
+
+// 处理
+
 // 打包任务
 task('build', async ()=>{
   await delDist()
   await img()
   await script()
   await sass()
+  await json()
   await html()
 })

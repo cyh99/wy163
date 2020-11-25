@@ -30,11 +30,18 @@
             </div>
         </div>
         <div class="main">
-            <input type="text" placeholder="请输入名称" required >
-            <input type="text" placeholder="请输入账号" required range:[5,10] number>
-            <input type="text" placeholder="请输入密码" required range:[6,16]>
-            <button class="submit" type="submit" value="Submit">注册</button>
-        </div>
+            <form action="" id="register">
+                <div class="name">
+                    <input type="text" placeholder="请输入名称"  name="name" id="name">
+                </div>
+                <div class="act">
+                    <input type="text" placeholder="请输入账号" name="account" id="account">
+                </div>
+                <div class="psd">
+                    <input type="text" placeholder="请输入密码" name="password" id="password">
+                </div>
+                    <button class="submit" type="submit" value="Submit">注册</button>
+            </form>
     </div>
 </body>
 </html>
