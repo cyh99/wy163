@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index-iconfont.css">
     <link rel="stylesheet" href="./css/detail.css">
-    <script src="./js/detail.js"></script>
 </head>
 
 <body>
@@ -96,23 +95,27 @@
                 <div class="detail">
                     <div class="show">
                         <div class="show-img">
-                            <img src="">
+                            <div class="mask"></div>
+                            <img src="./img/data-img1-detail.webp" class="data-show-img">
+                            <div class="big-img">
+                                <img src="./img/data-img1-detail.webp" alt="" class="data-big-img">
+                            </div>
                         </div>
                         <div class="img-list">
                             <div>
-                                <img src="">
+                                <img src="./img/data-img1-detail.webp">
                             </div>
                             <div>
-                                <img src="">
+                                <img src="./img/data-img2-detail.webp">
                             </div>
                             <div>
-                                <img src="">
+                                <img src="./img/data-img3-detail.webp">
                             </div>
                             <div>
-                                <img src="">
+                                <img src="./img/data-img4-detail.webp">
                             </div>
                             <div>
-                                <img src="">
+                                <img src="./img/data-img5-detail.webp">
                             </div>
                         </div>
                     </div>
@@ -164,8 +167,12 @@
                         <!-- 商品规格 -->
                         <div class="size">
                             <span>规格</span>
-                            <img src="">
-                            <img src="">
+                            <div class="size1" title="定制款-深空黑色-i5/8G/256G">
+                                <img src="./img/data-mac1-detail.webp">
+                            </div>
+                            <div class="size2" title="定制款-深空银色-i5/8G/256G">
+                                <img src="./img/data-mac2-detail.webp">
+                            </div>
                         </div>
                         <!-- 商品数量 -->
                         <div class="num">
@@ -288,5 +295,7 @@
         </div>
     </div>
 </body>
+<script src="./js/jquery-3.5.1.min.js"></script>
+<script src="./js/detail.js"></script>
 
 </html>

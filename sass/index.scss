@@ -124,6 +124,7 @@ $search-color : #CB9755;
                     border-radius: 20px;
                     font-size: 16px;
                     color: #CD9959;
+                    outline: none;
                     b {
                         position: absolute;
                         left: 13px;
@@ -268,6 +269,9 @@ $search-color : #CB9755;
                     background-size: 12px 24px;
                 }
             }
+        }
+        .new-swiper {
+            position: relative;
         }
         .aside-left {
             position: absolute;
@@ -660,6 +664,7 @@ $search-color : #CB9755;
             border-radius: 50%;
             background-color: #E2C19A;
             background-size: 12px 24px;
+            left: -60px;
             &:hover {
                 background-color: $search-color;
             }
@@ -670,6 +675,7 @@ $search-color : #CB9755;
             border-radius: 50%;
             background-color: #E2C19A;
             background-size: 12px 24px;
+            right: 60px;
             &:hover {
                 background-color: $search-color;
             }

@@ -27,12 +27,6 @@ $search-color : #CB9755;
                     padding: 0 10px;
                     height: 36px;
                     line-height: 36px;
-                    // &::after{
-                    //     content: '';
-                    //     height: 16px;
-                    //     border-right: 1px solid #5c5c5c;
-                    //     vertical-align: middle;
-                    // }
                     a {
                         color: #ccc;
                         &:hover {
@@ -124,6 +118,7 @@ $search-color : #CB9755;
                     border-radius: 20px;
                     font-size: 16px;
                     color: #CD9959;
+                    outline: none;
                     b {
                         position: absolute;
                         left: 13px;
@@ -188,20 +183,63 @@ $search-color : #CB9755;
                 display: flex;
                 justify-content: space-between;
                 .show {
+                    position: relative;
                     width: 430px;
                     .show-img {
-                        width: 428px;
-                        height: 428px;
+                        width: 430px;
+                        height: 430px;
                         border: 1px solid #ccc;
+                        cursor: move;
+                        .mask {
+                            position: absolute;
+                            top: 0;
+                            left : 0;
+                            width: 200px;
+                            height: 200px;
+                            display: none;
+                            background-color: rgba($color: pink, $alpha: 0.4);
+                        }
+                        img {
+                            width: 430px;
+                            height: 430px;
+                        }
+                        .big-img {
+                            position: absolute;
+                            top: 0;
+                            left: 470px;
+                            width: 430px;
+                            height: 430px;
+                            border: 1px solid #ccc;
+                            background-color: #fff;;
+                            overflow: hidden;
+                            display: none;
+                            img {
+                                position: absolute;
+                                top: 0;
+                                left : 0;
+                                width: 665px;
+                                height: 665px;
+                            }
+                        }
                     }
                     .img-list {
                         display: flex;
                         justify-content: space-between;
                         padding-top: 20px;
+                        img{
+                            display: block;
+                            height: 78px;
+                            cursor: pointer;
+                        }
                         div {
-                            width: 76px;
-                            height: 76px;
+                            width: 80px;
+                            height: 80px;
+                            overflow: hidden;
                             border: 1px solid #ccc;
+                            box-sizing: border-box;
+                            &:hover {
+                                border: 2px solid #B5A178;
+                            }
                         }
                     }
                 }
@@ -297,10 +335,15 @@ $search-color : #CB9755;
                             display: inline-block;
                             width: 55px;
                         }
+                        div {
+                            display: inline-block;
+                            margin-left: 5px;
+                            border: 1px solid #ccc;
+                            cursor: pointer;
+                        }
                         img {
                             width: 50px;
                             height: 50px;
-                            margin-left: 5px;
                         }
                     }
                     .num {
@@ -313,6 +356,7 @@ $search-color : #CB9755;
                             border: 1px solid #ccc;
                             text-align: center;
                             .add {
+                                cursor: pointer;
                                 width: 36px;
                                 height: 30px;
                                 line-height: 30px;
@@ -327,10 +371,12 @@ $search-color : #CB9755;
                                 border-right: 1px solid #ccc;
                             }
                             .cut {
+                                cursor: pointer;
                                 width: 36px;
                                 height: 30px;
                                 line-height: 30px;
                             }
+
                         }
                         i {
                             font-weight: normal;

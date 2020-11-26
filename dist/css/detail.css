@@ -96,7 +96,8 @@
           box-sizing: border-box;
           border-radius: 20px;
           font-size: 16px;
-          color: #CD9959; }
+          color: #CD9959;
+          outline: none; }
           .app .wyyx .wyyx-inner .logo .car-btn b {
             position: absolute;
             left: 13px;
@@ -148,19 +149,56 @@
         display: flex;
         justify-content: space-between; }
         .app .main .main-inner .detail .show {
+          position: relative;
           width: 430px; }
           .app .main .main-inner .detail .show .show-img {
-            width: 428px;
-            height: 428px;
-            border: 1px solid #ccc; }
+            width: 430px;
+            height: 430px;
+            border: 1px solid #ccc;
+            cursor: move; }
+            .app .main .main-inner .detail .show .show-img .mask {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 200px;
+              height: 200px;
+              display: none;
+              background-color: rgba(255, 192, 203, 0.4); }
+            .app .main .main-inner .detail .show .show-img img {
+              width: 430px;
+              height: 430px; }
+            .app .main .main-inner .detail .show .show-img .big-img {
+              position: absolute;
+              top: 0;
+              left: 470px;
+              width: 430px;
+              height: 430px;
+              border: 1px solid #ccc;
+              background-color: #fff;
+              overflow: hidden;
+              display: none; }
+              .app .main .main-inner .detail .show .show-img .big-img img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 665px;
+                height: 665px; }
           .app .main .main-inner .detail .show .img-list {
             display: flex;
             justify-content: space-between;
             padding-top: 20px; }
+            .app .main .main-inner .detail .show .img-list img {
+              display: block;
+              height: 78px;
+              cursor: pointer; }
             .app .main .main-inner .detail .show .img-list div {
-              width: 76px;
-              height: 76px;
-              border: 1px solid #ccc; }
+              width: 80px;
+              height: 80px;
+              overflow: hidden;
+              border: 1px solid #ccc;
+              box-sizing: border-box; }
+              .app .main .main-inner .detail .show .img-list div:hover {
+                border: 2px solid #B5A178; }
         .app .main .main-inner .detail .info {
           width: 620px;
           font-size: 12px; }
@@ -234,10 +272,14 @@
             .app .main .main-inner .detail .info .size span {
               display: inline-block;
               width: 55px; }
+            .app .main .main-inner .detail .info .size div {
+              display: inline-block;
+              margin-left: 5px;
+              border: 1px solid #ccc;
+              cursor: pointer; }
             .app .main .main-inner .detail .info .size img {
               width: 50px;
-              height: 50px;
-              margin-left: 5px; }
+              height: 50px; }
           .app .main .main-inner .detail .info .num span {
             display: inline-block;
             width: 55px; }
@@ -246,6 +288,7 @@
             border: 1px solid #ccc;
             text-align: center; }
             .app .main .main-inner .detail .info .num .num-box .add {
+              cursor: pointer;
               width: 36px;
               height: 30px;
               line-height: 30px; }
@@ -258,6 +301,7 @@
               border-left: 1px solid #ccc;
               border-right: 1px solid #ccc; }
             .app .main .main-inner .detail .info .num .num-box .cut {
+              cursor: pointer;
               width: 36px;
               height: 30px;
               line-height: 30px; }
