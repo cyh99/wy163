@@ -1,6 +1,33 @@
 .app {
+  position: relative;
   color: #333;
   font-size: 14px; }
+  .app .pay {
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    z-index: 100;
+    width: 500px;
+    height: 300px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -250px;
+    display: none; }
+    .app .pay .close {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: 1px solid #f40;
+      width: 30px;
+      text-align: center;
+      height: 26px;
+      line-height: 26px;
+      cursor: pointer; }
   .app .header {
     background-color: #333333; }
     .app .header .header-inner {
@@ -225,7 +252,13 @@
             .app .main .main-inner .detail .info .box b, .app .main .main-inner .detail .info .box i, .app .main .main-inner .detail .info .box strong {
               font-style: normal; }
             .app .main .main-inner .detail .info .box .price {
-              line-height: 50px; }
+              line-height: 50px;
+              color: #d7282d;
+              font-size: 28px;
+              line-height: 30px; }
+              .app .main .main-inner .detail .info .box .price span {
+                color: #666;
+                font-size: 12px; }
               .app .main .main-inner .detail .info .box .price b {
                 font-weight: normal;
                 color: #d7282d;

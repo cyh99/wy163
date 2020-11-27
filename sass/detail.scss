@@ -1,8 +1,37 @@
 $main-content : 1090px;
 $search-color : #CB9755;
 .app{
+    position: relative;
     color: #333;
     font-size: 14px;
+    .pay {
+        margin-top: 20px;
+        padding: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        position: absolute;
+        z-index: 100;
+        width: 500px;
+        height: 300px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        top: 50%;
+        left: 50%;
+        margin-top: -150px;
+        margin-left: -250px;
+        display: none;
+        .close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            border: 1px solid #f40;
+            width: 30px;
+            text-align: center;
+            height: 26px;
+            line-height: 26px;
+            cursor: pointer;
+        }
+    }
     .header {
         background-color: #333333;
         .header-inner {
@@ -274,6 +303,13 @@ $search-color : #CB9755;
                         }
                         .price {
                             line-height: 50px;
+                            color: #d7282d;
+                            font-size: 28px;
+                            line-height: 30px;
+                            span {
+                                color: #666;
+                                font-size: 12px;
+                            }
                             b {
                                 font-weight: normal;
                                 color: #d7282d;

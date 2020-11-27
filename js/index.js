@@ -1,11 +1,9 @@
 // 轮播图1
 var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
-
     // 如果需要前进后退按钮
     nextButton: '.swiper-button-next',
     prevButton: '.swiper-button-prev',
-
   })
 
 // 轮播图2
@@ -77,6 +75,54 @@ window.onscroll = function () {
     }
  }
 
+// 存储数据到本地
+$.ajax({
+    url : "../json/account.json",
+    type : "get",
+    dataType : "json",
+    success : function (data) {
+        imAccount(data)
+    },
+    error: function(status){
+        console.log(status)
+    }
+})
+function imAccount(data) {
+    window.localStorage.setItem('account',JSON.stringify(data))
+}
+
+// 拿到用户登录的 id
+var topUl = document.querySelector('.topUl')
+var loginName = document.querySelector('.loginName')
+var loadId = getUrlParms('id') || ''
+console.log(loadId)
+
+// 通过用户的 id,拿到用户名
+var storage = JSON.parse(window.localStorage.getItem('account'))
+
+var name    // 定义变量接收用户账号名
+
+storage.forEach(function (value,index) {
+    if(value.id == loadId){
+        name = value.name
+    }
+})
+// 通过用户 id 来改变顶部导航的状态名
+if(loadId !==  '' || loadId === 0){
+    loginName.remove()
+    var accountName = document.createElement('li')
+    var accountLink = document.createElement('a')
+    accountLink.innerHTML = name
+    accountName.append(accountLink)
+    topUl.insertBefore(accountName,topUl.childNodes[0])
+}
+
+// 购物车跳转
+var carBtn = document.querySelector('.car-btn')
+carBtn.onclick = function () {
+    window.location.href = './shop-car.html'
+}
+
 //  数据渲染
 // 居家生活版块
 var homeList = document.querySelector('.home-list')
@@ -85,11 +131,8 @@ $.ajax({
     type: 'get',
     dataType : 'json',
     success : function (data){
-        console.log(data)
         var str = ''
-        // console.log(data['new'])
         data['new'].forEach(function(value,index){
-            console.log(value)
             str += 
             `
             <div>
@@ -120,11 +163,9 @@ $.ajax({
     type: 'get',
     dataType : 'json',
     success : function (data){
-        console.log(data)
         var str = ''
         // console.log(data['new'])
         data['clothing'].forEach(function(value,index){
-            console.log(value)
             str += 
             `
             <div>
@@ -147,3 +188,12 @@ $.ajax({
         console.log(status)
     }
 })
+
+//获取地址栏参数，name:参数名称
+function getUrlParms(name) {
+    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r != null)
+        return unescape(r[2]);
+    return null;
+}

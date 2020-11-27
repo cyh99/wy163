@@ -125,6 +125,28 @@ goodsNum.oninput = function () {
     }
 }
 
+// 支付按钮
+var pay = document.querySelector('.pay')
+var close = document.querySelector('.close')
+var buy = document.querySelector('.buy')
+var join = document.querySelector('.join')
+var numMoney = document.querySelector('.numMoney')
+var onePrice = document.querySelector('.price b')
+
+buy.onclick = function () {
+    // if(){} 如果有账号登录，则打开支付页面，否则提示未登录
+    // 支付页面
+    pay.style.display = 'block'
+    var goodsnum = document.querySelector('.goods-num')
+    var number = goodsnum.value
+    var numPrice = Number(onePrice.innerHTML) * number
+    numMoney.innerHTML = numPrice
+    
+}
+close.onclick = function () {
+    pay.style.display = 'none'
+
+}
 
 
 // 获取元素到最外层定位父级的距离

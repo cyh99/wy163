@@ -12,13 +12,16 @@ $.validator.setDefaults({
                 // console.log(typeof data)
                 // console.log(data)
                 var flag = false
+                var id 
                 for (var i = 0,len = data.length; i < len ; i ++){
                     if(act == data[i].account && psd == data[i].password){
                         flag = true
+                        id = i  
+                        break
                     }
                 }
                 if(flag){
-                    window.location.href = './index.html'
+                    window.location.href = './index.html?id='+id
                 }else {
                     alert('账号或密码错误,请重新输入')
                 }
